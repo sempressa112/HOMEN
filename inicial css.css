@@ -1,0 +1,354 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .timer-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .timer-container p {
+    margin: 0;
+    font-size: 18px;
+}
+
+header #timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o Botão CTA */
+.cta-container {
+    text-align: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.cta {
+    background-color: #e67e22; /* Cor inicial */
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Tamanho do botão */
+    cursor: pointer;
+    font-size: 18px; /* Tamanho da fonte */
+    border-radius: 5px;
+    transition: background-color 0.5s ease; /* Transição suave para mudança de cor */
+}
+
+.cta:hover {
+    opacity: 0.9; /* Efeito de hover */
+}
+
+#banner {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#banner .banner-slide h1 {
+    font-size: 28px;
+    margin: 0;
+}
+/* Estilos para a Seção de Vídeo */
+#video {
+    background-color: #2c3e50; /* Fundo escuro para destacar o vídeo */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2; /* Garante que a mensagem fique por cima do vídeo */
+}
+
+.video-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 para vídeo responsivo */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1; /* Garante que o vídeo fique abaixo da mensagem */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Estilos para o Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none; /* Esconde todos os slides por padrão */
+    text-align: center;
+    color: #fff; /* Letras brancas */
+}
+
+.slide.active {
+    display: block; /* Mostra apenas o slide ativo */
+}
+
+.slide h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 16px;
+    margin: 0;
+}
+#imagens {
+    text-align: center;
+    padding: 20px;
+}
+
+#imagens .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#imagens .gallery img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#conteudo-ebook {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#conteudo-ebook h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.conteudo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.conteudo-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.conteudo-container ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.conteudo-container ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+}
+
+.vantagens-desvantagens {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 4px;
+}
+
+.vantagens, .desvantagens {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.vantagens h4, .desvantagens h4 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.vantagens ul, .desvantagens ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vantagens ul li, .desvantagens ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.vantagens ul li::before {
+    content: "✅";
+    margin-right: 10px;
+}
+
+.desvantagens ul li::before {
+    content: "❌";
+    margin-right: 1px;
+}
+
+/* Estilos Gerais para a Seção de Depoimentos */
+#depoimentos {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#depoimentos h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.depoimento {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 100px); /* 3 depoimentos por linha */
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+.foto-depoimento {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.depoimento h3 {
+    font-size: 20px;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.depoimento p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Botão de Compra */
+.cta {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.cta:hover {
+    background-color: #d35400;
+}
+
+/* Ajustes para 2 depoimentos por linha */
+@media (max-width: 768px) {
+    .depoimento {
+        width: calc(50% - 20px); /* 2 depoimentos por linha em telas menores */
+    }
+}
+
+/* Ajustes para 1 depoimento por linha */
+@media (max-width: 480px) {
+    .depoimento {
+        width: 100%; /* 1 depoimento por linha em telas muito pequenas */
+    }
+}
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
